@@ -5,6 +5,11 @@ import Glyphicon from './Glyphicon';
 
 class InputGroup extends React.Component {
   renderLabel() {
+    return this.props.label ? (
+      <label htmlFor={this.props.id} className={classNames(this.props.labelClassName)} key="label">
+        {this.props.label}
+      </label>
+    ) : null;
   }
 
   renderGroup() {
@@ -90,6 +95,9 @@ class InputGroup extends React.Component {
 }
 
 InputGroup.propTypes = {
+  label: React.PropTypes.string,
+  id: React.PropTypes.string,
+  labelClassName: React.PropTypes.string,
   addonBefore: React.PropTypes.node,
   addonAfter: React.PropTypes.node,
   buttonBefore: React.PropTypes.node,
@@ -97,7 +105,8 @@ InputGroup.propTypes = {
   hasFeedback: React.PropTypes.bool,
   help: React.PropTypes.node,
   bsStyle: React.PropTypes.oneOf(['success', 'warning', 'error']),
-  bsSize: React.PropTypes.oneOf(['small', 'medium', 'large'])
+  bsSize: React.PropTypes.oneOf(['small', 'medium', 'large']),
+  children: React.PropTypes.element
 };
 
 export default InputGroup;
