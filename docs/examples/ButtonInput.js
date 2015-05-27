@@ -33,9 +33,9 @@ const ButtonInputExample = React.createClass({
     return (
     <form>
       <Input type="text" ref="input" onChange={this.handleChange} />
-      <ButtonInput bsSize="small">Child Text</ButtonInput>
-      <ButtonInput type="reset" bsStyle="primary" onClick={this.resetValidation} />
-      <ButtonInput type="submit" value="Submit Your Input" bsStyle={this.state.style} bsSize="large" disabled={this.state.disabled} />
+      <FormControls.Button type="button" bsSize="small">Child Text</FormControls.Button>
+      <FormControls.Button type="reset" bsStyle="primary" onClick={this.resetValidation} />
+      <FormControls.Button bsStyle={this.state.style} bsSize="large" disabled={this.state.disabled} />
     </form>
     );
   }

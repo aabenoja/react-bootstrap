@@ -1,12 +1,13 @@
 import React from 'react';
-import InputBase from './InputBase';
 import ButtonInput from './ButtonInput';
+import InputBase from './InputBase';
 import FormControls from './FormControls';
 import deprecationWarning from './utils/deprecationWarning';
 
+const buttonTypes = FormControls.Button.types;
 class Input extends InputBase {
   render() {
-    if (ButtonInput.types.indexOf(this.props.type) > -1) {
+    if (buttonTypes.indexOf(this.props.type) > -1) {
       deprecationWarning(`Input type=${this.props.type}`, 'ButtonInput');
       return <ButtonInput {...this.props} />;
     } else if (this.props.type === 'static') {

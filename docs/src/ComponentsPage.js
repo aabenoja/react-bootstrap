@@ -585,7 +585,7 @@ const ComponentsPage = React.createClass({
                   <p>Static text can be added to your form controls through the use of the <code>FormControls.Static</code> component.</p>
                   <ReactPlayground codeText={Samples.StaticText} />
                   <h2 id='button-input-types'>Button Input Types</h2>
-                  <p>Form buttons are encapsulated by <code>ButtonInput</code>. Pass in <code>type="reset"</code> or <code>type="submit"</code> to suit your needs. Styling is the same as <code>Button</code>.</p>
+                  <p>Form buttons are encapsulated by <code>FormControls.Button</code>. Pass in <code>type="button"</code> or <code>type="reset"</code> to suit your needs. Styling is the same as <code>Button</code>.</p>
                   <ReactPlayground codeText={Samples.ButtonInput} />
                   <h2 id='input-addons'>Add-ons</h2>
                   <p>Use <code>addonBefore</code> and <code>addonAfter</code> for normal addons, <code>buttonBefore</code> and <code>buttonAfter</code> for button addons.

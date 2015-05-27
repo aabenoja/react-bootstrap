@@ -15,9 +15,6 @@ const inputTypeInstance = (
       <option value='other'>...</option>
     </Input>
     <Input type='textarea' label='Text Area' placeholder='textarea' />
-    <ButtonInput value='Button Input' />
-    <ButtonInput type='reset' value='Reset Button' />
-    <ButtonInput type='submit' value='Submit Button' />
   </form>
 );
 

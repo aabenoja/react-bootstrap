@@ -5,7 +5,8 @@
   "globals": {
     "assert": true,
     "expect": true,
-    "sinon": true
+    "sinon": true,
+    "should": true
   },
   "plugins": [
     "mocha"
